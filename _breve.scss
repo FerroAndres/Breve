@@ -71,6 +71,12 @@ $prefixes:-webkit- -moz- -ms- -o- null;
 	}
 }
 
+@mixin transform($values) {
+	@each $prefijo in $prefixes {
+		#{$prefijo}transform:$values;
+	}
+}
+
 @mixin font-face($font-name, $font-url) {
 	font-family:"#{$font-name}";
 	src:url("#{$font-url}.otf"), url("#{$font-url}.eot?") format("eot"), url("#{$font-url}.woff") format("woff"), url("#{$font-url}.ttf") format("truetype");
