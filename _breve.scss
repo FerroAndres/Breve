@@ -17,9 +17,11 @@
 		Usage:				@include box-sizing(content-box);
 	5. transition:
 		Usage:				@include transition(color, 1s, linear);
-	6. font-face:
+	6. transform:
+		Usage:				@include transform(scale(1.3) rotate(10deg) translateX(10px) translateY(15px) skewX(5deg) skewY(3deg));
+	7. font-face:
 		Usage:				@include font-face(myfont, "../fonts/myfont");
-	7. gradient:
+	8. gradient:
 		Options: 			horizontal | vertical | diagonalTopLeft | diagonalBottomLeft | radial
 		Usage:				@include gradient(radial, black, blue);
 */
